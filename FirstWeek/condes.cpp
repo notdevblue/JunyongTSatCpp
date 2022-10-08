@@ -23,9 +23,22 @@ public:
         m_denominator = 2;
     }
 
+    Fraction(const int &_num, const int& _den)
+    {
+        m_numerator = _num;
+        m_denominator = _den;
+    }
+
     ~Fraction()
     {
 
+    }
+
+    int& GetNumber()
+    {
+        // 댕글링 레퍼런스 발생시킴
+        int temp = 1;
+        return temp;
     }
 };
 
